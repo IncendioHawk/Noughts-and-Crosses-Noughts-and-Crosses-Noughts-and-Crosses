@@ -97,7 +97,7 @@ export default function GameBoardInner({
               data-index={index}
               onClick={selectTile}
               key={board}>
-              {tempTileSymbol.value[index]?.symbol ?? tileSymbol.value[index]?.symbol ?? "A"}
+              {tempTileSymbol.value[index]?.symbol ?? tileSymbol.value[index]?.symbol}
             </button>
           )
         })}
