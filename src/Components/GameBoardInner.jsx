@@ -41,7 +41,7 @@ function selectTile(e) {
   console.log({ index })
   const tileArray = [...tileSymbol.value]
   tileArray[index] = { symbol: currentPlayerSymbol.value, date: Date.now() }
-  tempTileSymbol.value = tileArray
+  tempTileSymbol.value = [...tileArray]
   confirmHidden.value = {
     X: currentPlayerSymbol.value === "X" ? false : true,
     O: currentPlayerSymbol.value === "O" ? false : true,
